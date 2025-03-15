@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Item">
+
+    <!-- Makanan Title -->
+
+
+    <TextView
+        android:id="@+id/tvMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makanan"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="4dp"/>
+
+    <!-- Harga Makanan -->
+    <TextView
+        android:id="@+id/hargamakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga: Rp. 0"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="8dp"/>
+
+    <!-- Minuman Title -->
+
+
+    <!-- Image of Makanan -->
+    <ImageView
+        android:id="@+id/imgMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+
+    android:layout_marginTop="8dp"/>  <!-- Margin between image and text -->
+
+</LinearLayout>
