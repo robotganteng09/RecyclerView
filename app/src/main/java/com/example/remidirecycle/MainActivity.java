@@ -1,5 +1,6 @@
 package com.example.remidirecycle;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -42,6 +43,12 @@ public class MainActivity extends AppCompatActivity implements makananAdapter.On
     @Override
     public void onItemClick(ModalMakanan makananModel) {
         // Handle item click and show the name of the clicked food
-        Toast.makeText(this, makananModel.getNamaMakanan(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, makananModel.getNamaMakanan()+ "," + makananModel.getHargaMakanan(), Toast.LENGTH_SHORT).show();
+
+        Intent in = new Intent(MainActivity.this,DetailMakanan.class);
+        in.putExtra("namaMakanan",makananModel.getNamaMakanan());
+        in.putExtra("hargaMakanan",makananModel.getHargaMakanan());
+        in.putExtra("gambarMakanan",makananModel.getGambarMakanan());
+        startActivity(in);
     }
 }

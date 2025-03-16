@@ -51,6 +51,7 @@ public class makananAdapter extends RecyclerView.Adapter<makananAdapter.ViewHold
     }
 
     // ViewHolder harus berada di dalam class Adapter
+    // inner class
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvMakanan;
         TextView tvHarga;
